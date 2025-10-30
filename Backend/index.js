@@ -19,7 +19,7 @@ const server = http.createServer(app)
 
 const io = new Server(server, {
     cors:{
-    origin: "http://localhost:5173",
+    origin: "https://food-delivery-v7xl.onrender.com",
     credentials: true,
     methods:["POST","GET"]
 
@@ -34,7 +34,7 @@ app.set("io",io)
 
 
 app.use(cors({
-    origin: "http://localhost:5173",
+    origin: "https://food-delivery-v7xl.onrender.com",
     credentials: true
 
 }))
@@ -55,4 +55,5 @@ app.get("/", (req, res) => {
 server.listen(port, () => {
     connectDB()
     console.log("server is running ", port);
+
 })
