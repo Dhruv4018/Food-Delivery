@@ -19,7 +19,7 @@ const server = http.createServer(app)
 
 const io = new Server(server, {
     cors:{
-    origin: "https://food-delivery-v7xl.onrender.com",
+    origin: "https://food-backend-ide1.onrender.com",
     credentials: true,
     methods:["POST","GET"]
 
@@ -34,7 +34,7 @@ app.set("io",io)
 
 
 app.use(cors({
-    origin: "https://food-delivery-v7xl.onrender.com",
+    origin: "https://food-backend-ide1.onrender.com",
     credentials: true
 
 }))
@@ -57,3 +57,4 @@ server.listen(port, () => {
     console.log("server is running ", port);
 
 })
+
