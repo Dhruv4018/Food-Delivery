@@ -13,7 +13,7 @@ export const signUp = async (req, res) => {
             return res.status(400).json({ message: "password must be at least 6 characters." })
         }
         if (mobile.length < 10) {
-            return res.status(400).json({ message: "password must be at least 10 digits." })
+            return res.status(400).json({ message: "phone  must be at least 10 digits." })
         }
 
         const hashedPassword = await bcrypt.hash(password, 10);

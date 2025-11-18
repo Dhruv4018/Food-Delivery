@@ -123,7 +123,7 @@ const DeliveryBoy = () => {
     try {
       const result = await axios.get(`${serverUrl}/api/order/get-today-deliveries`
         , { withCredentials: true })
-      console.log(result.data)
+      //console.log(result.data)
       setTodayDeliveries(result.data)
     } catch (error) {
       console.log(error)

@@ -16,17 +16,17 @@ const Additem = () => {
     const [price, setPrice] = useState(0)
     const [category, setCategory] = useState("")
     const [foodType, setFoodType] = useState("veg")
-    const categories = ["Snacks",
-        "Main Course",
-        "Desserts",
-        "pizza",
-        "Burgers",
-        "Sandwiches",
-        "South Indian",
-        "North India",
-        "Chinese",
-        "Fast Food",
-        "Others"]
+    const categories = [ "Snacks",
+      "Main Course",
+      "Desserts",
+      "Pizza",
+      "Burgers",
+      "Sandwiches",
+      "South Indian",
+      "North Indian",
+      "Chinese",
+      "Fast Food",
+      "Others"]
     const [frontendImage, setFrontendImage] = useState(null)
     const [backendImage, setBackendImage] = useState(null)
     const [loading , setLoading] = useState(false)
